@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', sans-serif;
+    transition: 2s;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.893);
+}
+.container{
+    position: relative;
+    max-width: 370px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px #000000a9;
+    background: #fcf7f7;
+}
+.container header{
+    font-size: 22px;
+    font-weight: 500;
+}
+.container form{
+    margin-top: 30px;
+}
+form .field{
+   margin-bottom: 20px; 
+}
+
+form .input-field{
+position: relative;
+height: 55px;
+width: 100%;
+
+}
+.input-field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 0 15px ;
+    box-shadow: inset #898989b0  3px 3px 3px 1px
+    ,inset  #898989b0 -3px -3px 3px 1px,
+    3px 3px 3px  #ffffffac,-2px -2px 2px 1px #ffffffac
+    
+  ;
+}
+.input-field .show-hide{
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #919191;
+  cursor: pointer;
+  padding: 3px;
+}
+.field .error{
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    color:rgb(227, 47, 47) ;
+    font-size: 11px;
+    display: none;
+}
+.error .bxs-bug{
+    margin-right: 6px;
+    font-size: 14px;
+}
+.create-password .error{
+    align-items: flex-start;
+}
+.create-password .bxs-bug{
+    margin-top: 4px;
+}
+.button{
+    margin: 25px 0 6px;
+}
+.button input{
+    background-color: #02ffc4;
+    color: #000000;
+    font-weight: 550;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 3s ease;
+}
+.button input:hover{
+   
+    box-shadow: rgb(255, 255, 255) 2px 2px 2px,
+    3px 3px 3px #15dbe1
+    ,3px 3px 3px #15dbe1;
+    background: linear-gradient(60deg,#02ffc4,#11dbca);
+    transition: all 3s ease;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(2) scaleX(2.95);
+    transform-origin: bottom;
+    box-sizing: border-box;
+    display: block;
+    pointer-events: none;
+  }
+.background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: rotateY(3);
+  }
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    display: flex;
+    width: 100%;
+    height: 370px;
+  }
+  
